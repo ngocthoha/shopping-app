@@ -35,7 +35,7 @@ app.get("/:page", (req, res) => {
 });
 
 // set server port & start server
-const port = 3000;
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+app.set("port", process.env.PORT || 3000);
+app.listen(app.get("port"), () => {
+  console.log(`Example app listening at http://localhost:3000`);
 });
