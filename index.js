@@ -2,8 +2,8 @@ const express = require("express");
 const app = express();
 
 // use morgan logger
-const morgan = require("morgan");
-app.use(morgan("combined"));
+// const morgan = require("morgan");
+// app.use(morgan("combined"));
 // set public static folder
 app.use(express.static(__dirname + "/public"));
 
