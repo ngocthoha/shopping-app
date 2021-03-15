@@ -33,3 +33,18 @@ Express Handlebars view engine
 ```npm
 $ npm install express-handlebars
 ```
+
+Installation SASS
+
+```npm
+$ npm install node-sass --save-dev
+```
+
+Installation PostgreSQL
+```npm
+$ npm install pg
+$ npm install --save sequelize
+$ npm install --save-dev sequelize-cli
+```
+
+

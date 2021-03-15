@@ -11,10 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^5.2.1"
+    "express-handlebars": "^5.2.1",
+    "pg": "^8.5.1",
+    "sequelize": "^6.5.1"
   },
   "devDependencies": {
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.7"
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7",
+    "sequelize-cli": "^6.2.0"
   }
 }
