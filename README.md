@@ -46,5 +46,15 @@ $ npm install pg
 $ npm install --save sequelize
 $ npm install --save-dev sequelize-cli
 ```
+Generate name and attributes
 
+```npm
+$ sequelize model:generate --name Category --attributes name:string,sumary:text,imagepath:text
+```
+
+Create Seeder
+```npm
+$ sequelize seed:generate --name demo-Category
+$ sequelize db:seed:all
+```
 
