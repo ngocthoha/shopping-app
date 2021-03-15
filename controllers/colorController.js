@@ -1,11 +1,11 @@
 let controller = {};
 let models = require("../models");
-let Category = models.Category;
+let Color = models.Color;
 controller.getAll = () => {
   return new Promise((resovle, reject) => {
-    Category.findAll({
-      attribute: ["id", "name", "imagepath", "summary"],
-      include: [{ model: models.Product }],
+    Color.findAll({
+      attribute: ["id", "name", "imagepath", "code"],
+      include: [{ model: models.ProductColor }],
     })
       .then((data) => resovle(data))
       .catch((error) => reject(new Error(error)));
